@@ -1,0 +1,10 @@
+{
+  "name": "no-api-search",
+  "version": "0.1.0",
+  "description": "Free, keyless web search and page reader for local AI agents",
+  "license": "MIT",
+  "keywords": ["pi-package", "web-search", "web-fetch", "duckduckgo", "mcp"],
+  "repository": "github:tctsung/no-api-search",
+  "pi": { "extensions": ["./index.ts"] },
+  "peerDependencies": { "@earendil-works/pi-coding-agent": "*" }
+}

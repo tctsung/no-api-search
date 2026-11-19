@@ -1,0 +1,26 @@
+[project]
+name = "no-api-search"
+version = "0.1.0"
+description = "Free, keyless web search and page reader for local AI agents (CLI + MCP server)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "tctsung" }]
+keywords = ["web-search", "mcp", "duckduckgo", "llm", "agent", "free"]
+dependencies = ["ddgs>=9.14.0,<10.0.0"]
+
+[project.scripts]
+no-api-search = "no_api_search:main"
+
+[project.urls]
+Homepage = "https://github.com/tctsung/no-api-search"
+
+[dependency-groups]
+dev = ["mcp>=2"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+cache-keys = [{ file = "pyproject.toml" }, { file = "src/**/*.py" }]
